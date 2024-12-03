@@ -27,9 +27,9 @@ form.addEventListener('submit', (e)=>{
 	});
 
 	promise.then(() =>{
-		alert(`Welcome ${nameInput}. You can vote`);
+		alert(`Welcome ${nameInput}. You can vote.`);
 	}).catch(()=>{
-		alert(`Oh sorry ${nameInput}. You aren't old enough`);
+		alert(`Oh sorry ${nameInput}. You aren't old enough.`);
 	 });
 
 });
