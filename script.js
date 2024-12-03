@@ -10,7 +10,7 @@ form.addEventListener('submit', (e)=>{
 	let ageInput = age.value.trim();
 
 	if(!nameInput || !ageInput){
-		alert("both fields are required");
+		alert("Please enter valid details");
 		return;
 	}
 
@@ -27,7 +27,7 @@ form.addEventListener('submit', (e)=>{
 	});
 
 	promise.then(() =>{
-		alert(`Welcome ${nameInput}. You can vote.`);
+		alert(`Welcome, ${nameInput}. You can vote.`);
 	}).catch(()=>{
 		alert(`Oh sorry ${nameInput}. You aren't old enough.`);
 	 });
